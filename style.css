@@ -1,6 +1,9 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+header {
+  background-color: pink;
+}
 .nav_bar ul {
   margin: 0;
   padding: 3rem 0 0 0;
@@ -12,11 +15,28 @@ body {
   font-size: larger;
   display: block;
   padding: 0.5rem 1rem;
-  color: inherit;
+  color: white;
+  font-weight: bold;
   text-decoration: none;
 }
-header {
+h1 {
+  color: white;
   background-color: pink;
+  padding: 12px;
+  border-style: double;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  padding-bottom: 3rem;
+}
+.intro-info {
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
 }
 .round-image {
   width: 300px;
@@ -25,10 +45,18 @@ header {
   object-fit: cover;
   border-radius: 50%;
 }
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#gallery-title {
+  text-align: center;
+}
 .grid-pics {
   width: 270px;
   height: 270px;
-  object-position: top;
+  object-position: center;
   object-fit: cover;
   padding: 0.5rem;
 }
