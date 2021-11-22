@@ -59,4 +59,35 @@ h1 {
   object-position: center;
   object-fit: cover;
   padding: 0.5rem;
+  transition: 0.5s ease;
+}
+.hover-pic {
+  position: relative;
+}
+.hover-info {
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transition: 0.5s ease;
+}
+.hover-pic:hover .hover-info {
+  opacity: 1;
+}
+.hover-pic:hover .grid-pics {
+  opacity: 0.3;
+}
+
+footer {
+  color: white;
+  font-weight: bold;
+  margin-top: 1.2rem;
+  padding-top: 3rem;
+  padding-bottom: 5px;
+  background-color: pink;
+  text-align: center;
+  font-size: 70%;
 }
