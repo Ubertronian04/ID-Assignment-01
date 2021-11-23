@@ -114,6 +114,36 @@ footer {
   text-align: center;
   font-size: 70%;
 }
+/*About me - layout*/
+.aboutme-pg {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.aboutme-section {
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  padding-bottom: 2rem;
+  margin: auto;
+}
+#aboutme-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-left: 42%;
+  margin-right: 42%;
+}
+.aboutme-pics {
+  height: 320px;
+  width: 320px;
+  object-position: center;
+  object-fit: cover;
+  padding: 1rem;
+}
+#bottom-aboutme-pic {
+  object-position: right;
+}
 /*Adjusting display*/
 /*Home */
 @media (min-width: 956px) {
@@ -130,6 +160,34 @@ footer {
     height: 200px;
   }
   .intro-info {
+    padding: 0;
+  }
+}
+@media (min-width: 1486px) {
+  .aboutme-section {
+    font-size: larger;
+    width: 1024px;
+  }
+}
+@media (max-width: 975px) {
+  #aboutme-title {
+    margin-left: 36%;
+    margin-right: 36%;
+  }
+  .aboutme-section {
+    flex-direction: column;
+  }
+  #bottom-aboutme-section {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 600px) {
+  #aboutme-title {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .aboutme-section {
+    font-size: 70%;
     padding: 0;
   }
 }
