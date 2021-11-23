@@ -122,8 +122,8 @@ footer {
 .aboutme-section {
   display: flex;
   align-items: center;
-  padding: 5rem;
-  padding-bottom: 2rem;
+  padding: 4rem;
+  padding-bottom: 3rem;
   margin: auto;
 }
 #aboutme-title {
@@ -140,10 +140,20 @@ footer {
   object-position: center;
   object-fit: cover;
   padding: 1rem;
+  padding-right: 2rem;
 }
 #bottom-aboutme-pic {
   object-position: right;
+  padding-left: 2rem;
 }
+/*Portfolio page*/
+.core-skill-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+}
+
 /*Adjusting display*/
 /*Home */
 @media (min-width: 956px) {
@@ -163,6 +173,7 @@ footer {
     padding: 0;
   }
 }
+/*About Me*/
 @media (min-width: 1486px) {
   .aboutme-section {
     font-size: larger;
