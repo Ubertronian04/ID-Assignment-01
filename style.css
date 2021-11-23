@@ -91,3 +91,20 @@ footer {
   text-align: center;
   font-size: 70%;
 }
+@media (min-width: 956px) {
+  .intro-info {
+    width: 756px;
+  }
+}
+@media (max-width: 455px) {
+  .nav_bar ul {
+    align-items: space-around;
+  }
+  .round-image {
+    width: 200px;
+    height: 200px;
+  }
+  .intro-info {
+    padding: 0;
+  }
+}
