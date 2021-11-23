@@ -147,6 +147,54 @@ footer {
   padding-left: 2rem;
 }
 /*Portfolio page*/
+h2 {
+  font-size: larger;
+  text-align: center;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: pink;
+  color: white;
+  border-style: double;
+  margin: 2%;
+  margin-left: 42%;
+  margin-right: 42%;
+}
+.work-exp-section {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.edu-section {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: pink;
+}
+.portfolio-content {
+  padding: 3rem;
+  margin-left: 4%;
+  margin-right: 4%;
+  border-style: solid;
+  border-color: pink;
+  border-width: thick;
+  width: 400px;
+}
+#portfolio-coloured-section-title {
+  margin: 0;
+  margin-top: 2%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  border-style: solid;
+  border-color: pink;
+}
+#portfolio-coloured-section-content {
+  padding-bottom: 2%;
+}
+#portfolio-coloured-section-content p {
+  background-color: white;
+  border-color: white;
+}
 .core-skill-pic {
   width: 120px;
   height: 120px;
@@ -173,11 +221,14 @@ footer {
     padding: 0;
   }
 }
-/*About Me*/
+/*About Me & Portfolio*/
 @media (min-width: 1486px) {
   .aboutme-section {
     font-size: larger;
     width: 1024px;
+  }
+  h2 {
+    font-size: 160%;
   }
 }
 @media (max-width: 975px) {
@@ -191,6 +242,18 @@ footer {
   #bottom-aboutme-section {
     flex-direction: column-reverse;
   }
+  .work-exp-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .edu-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    margin-left: 36%;
+    margin-right: 36%;
+  }
 }
 @media (max-width: 600px) {
   #aboutme-title {
@@ -200,5 +263,13 @@ footer {
   .aboutme-section {
     font-size: 70%;
     padding: 0;
+  }
+  .portfolio-content {
+    width: fit-content;
+  }
+  h2 {
+    font-size: medium;
+    margin-left: 28%;
+    margin-right: 28%;
   }
 }
