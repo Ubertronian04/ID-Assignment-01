@@ -7,7 +7,7 @@ header {
 /* for navigation */
 .nav_bar ul {
   margin: 0;
-  padding: 3rem 0 0 0;
+  padding: 0;
   display: flex;
   align-items: flex-start;
   list-style-type: none;
@@ -15,7 +15,7 @@ header {
 .nav_bar ul a {
   font-size: larger;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.05rem;
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -28,15 +28,19 @@ header {
 }
 #home:hover {
   color: grey;
+  transform: scale(1.15);
 }
 #about:hover {
   color: grey;
+  transform: scale(1.15);
 }
 #portfolio:hover {
   color: grey;
+  transform: scale(1.15);
 }
 #contact:hover {
   color: grey;
+  transform: scale(1.15);
 }
 /* Home - Introduction section*/
 h1 {
@@ -45,12 +49,23 @@ h1 {
   padding: 12px;
   border-style: double;
 }
+.website-title {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-style: none;
+  align-items: center;
+  margin: 0;
+}
 .introduction {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5rem;
   padding-bottom: 3rem;
+}
+#intro-title {
+  padding: 1%;
 }
 .intro-info {
   padding-top: 1rem;
@@ -200,6 +215,36 @@ h2 {
   height: 120px;
   object-fit: cover;
   object-position: center;
+}
+.skill-content {
+  display: flex;
+  justify-content: center;
+  margin-right: 3%;
+}
+.skill-titles {
+  display: flex;
+  justify-content: center;
+}
+.core-skill {
+  padding-right: 12%;
+}
+.tech-skill {
+  text-align: center;
+  padding-left: 12%;
+}
+.tech-skill th {
+  font-size: 120%;
+}
+.tech-skill td {
+  font-size: 90%;
+}
+.skill-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.skill-titles h2 {
+  margin: 2% 11% 2% 12%;
 }
 
 /*Adjusting display*/
