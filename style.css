@@ -210,43 +210,53 @@ h2 {
   background-color: white;
   border-color: white;
 }
+/*skills*/
+
+#core-skill-title {
+  grid-area: title1;
+  justify-self: center;
+}
+#tech-skill-title {
+  grid-area: title2;
+  justify-self: center;
+}
+#core-skill-content {
+  grid-area: content1;
+  justify-self: center;
+}
+#tech-skill-content {
+  grid-area: content2;
+  justify-self: center;
+}
 .core-skill-pic {
   width: 120px;
   height: 120px;
   object-fit: cover;
   object-position: center;
 }
+.skill-section {
+  display: grid;
+  margin-left: 9%;
+  margin-right: 9%;
+  grid-template-columns: 1f 1f;
+  grid-template-rows: 1f 75%;
+  grid-template-areas:
+    "title1 title2"
+    "content1 content2";
+}
+/*
 .skill-content {
   display: flex;
   justify-content: center;
-  margin-right: 3%;
 }
-.skill-titles {
-  display: flex;
-  justify-content: center;
-}
-.core-skill {
-  padding-right: 12%;
-}
-.tech-skill {
-  text-align: center;
-  padding-left: 12%;
-}
-.tech-skill th {
+*/
+.portfolio-content th {
   font-size: 120%;
 }
-.tech-skill td {
+.portfolio-content td {
   font-size: 90%;
+  text-align: center;
 }
-.skill-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.skill-titles h2 {
-  margin: 2% 11% 2% 12%;
-}
-
 /*Adjusting display*/
 /*Home */
 @media (min-width: 956px) {
@@ -275,6 +285,10 @@ h2 {
   h2 {
     font-size: 160%;
   }
+  .skill-section {
+    margin-left: 22%;
+    margin-right: 22%;
+  }
 }
 @media (max-width: 975px) {
   #aboutme-title {
@@ -295,9 +309,18 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
-  h2 {
-    margin-left: 36%;
-    margin-right: 36%;
+  .skill-section {
+    margin: 2% 0 12% 0;
+    grid-template-columns: 1;
+    grid-template-rows: 1f 1f 1f 1f;
+    grid:
+      "title1"
+      "content1"
+      "title2"
+      "content2";
+  }
+  #tech-skill-content {
+    height: 140%;
   }
 }
 @media (max-width: 600px) {
@@ -316,5 +339,8 @@ h2 {
     font-size: medium;
     margin-left: 28%;
     margin-right: 28%;
+  }
+  .skill-section {
+    margin-bottom: 20%;
   }
 }
