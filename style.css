@@ -48,6 +48,7 @@ h1 {
   background-color: pink;
   padding: 12px;
   border-style: double;
+  text-align: center;
 }
 .website-title {
   display: flex;
@@ -85,9 +86,6 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-#gallery-title {
-  text-align: center;
 }
 .grid-pics {
   width: 270px;
@@ -165,15 +163,11 @@ footer {
 h2 {
   font-size: larger;
   text-align: center;
-  padding: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
   background-color: pink;
   color: white;
   border-style: double;
-  margin: 2%;
-  margin-left: 42%;
-  margin-right: 42%;
+  margin: 2% 42% 2% 42%;
 }
 .work-exp-section {
   display: flex;
@@ -188,8 +182,7 @@ h2 {
 }
 .portfolio-content {
   padding: 3rem;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin: 0 4% 0 4%;
   border-style: solid;
   border-color: pink;
   border-width: thick;
@@ -211,8 +204,8 @@ h2 {
   border-color: white;
 }
 /*skills*/
-
 #core-skill-title {
+  padding: 2rem;
   grid-area: title1;
   justify-self: center;
 }
@@ -236,26 +229,66 @@ h2 {
 }
 .skill-section {
   display: grid;
-  margin-left: 9%;
-  margin-right: 9%;
+  margin: 2% 9% 0 9%;
   grid-template-columns: 1f 1f;
   grid-template-rows: 1f 75%;
   grid-template-areas:
     "title1 title2"
     "content1 content2";
 }
-/*
-.skill-content {
-  display: flex;
-  justify-content: center;
-}
-*/
 .portfolio-content th {
   font-size: 120%;
 }
 .portfolio-content td {
   font-size: 90%;
   text-align: center;
+}
+/*Contact page*/
+.contactpg {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3 {
+  font-size: larger;
+}
+.linkedinLogo {
+  width: 60px;
+  height: 60px;
+  transition: 0.3s ease;
+}
+.linkedinLogo:hover {
+  transform: scale(1.1);
+}
+.contactform {
+  text-align: left;
+  padding: 2rem;
+}
+input,
+textarea {
+  width: 350px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: gray;
+}
+textarea {
+  height: 200px;
+  border-width: 2px;
+}
+.contactform-section {
+  margin-top: 2.5rem;
+  border-color: rgb(236, 153, 167);
+  border-style: solid;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.contactform-section h3,
+#email-title {
+  padding-top: 1.5rem;
+}
+#sendform {
+  width: auto;
+  margin-left: 84%;
 }
 /*Adjusting display*/
 /*Home */
@@ -342,5 +375,10 @@ h2 {
   }
   .skill-section {
     margin-bottom: 20%;
+  }
+}
+@media (max-width: 472px) {
+  .contactpg {
+    transform: scale(0.86);
   }
 }

@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="normalise.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
     <script src="script.js"></script>
   </head>
@@ -19,13 +19,50 @@
       <h3 class="website-title">~ Chiam Wei ~</h3>
       <nav class="nav_bar">
         <ul>
-          <li><a id="home" href="home.html">Home</a></li>
+          <li><a id="home" href="index.html">Home</a></li>
           <li><a id="about" href="aboutme.html"">About me</a></li>
           <li><a id="portfolio" href="portfolio.html">Portfolio</a></li>
           <li class="currentpg"><a id="contact" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+    <main class="contactpg">
+      <h1>Contact Me</h1>
+      <section class="contacts">
+        <h3>LinkedIn</h3>
+        <a href="https://www.linkedin.com/in/chiam-wei-122094211/">
+          <img class="linkedinLogo" src="assets/linkedin-logo.png" alt="linkedin logo">
+        </a>
+        <h3 id="email-title">Email</h3>
+        <p>s10223002@connect.np.edu.sg</p>
+      </section>
+      <section class="contactform-section">
+        <h3>Contact Form</h3>
+        <p>Send me your queries</p>
+        <form class="contactform">
+          <label for="name">Name</label><br>
+          <input type="text" placeholder="Enter First and Last name" name="name" required><br><br>
+
+          <label for="email">Email</label><br>
+          <input type="email" placeholder="Enter Company/Business email" name="email" required><br><br>
+
+          <label for="telNo">Phone No.</label><br>
+          <input type="tel" placeholder="Enter Contact No." name="telNo" required><br><br>
+
+          <label for="company">Company</label><br>
+          <input type="text" placeholder="Enter Company Name" name="company"><br><br>
+
+          <label for="reason">Reason for reaching out</label><br>
+          <input type="text" name="reason" required><br><br>
+
+          <label for="addInfo">Additional Information</label><br>
+          <textarea name="addInfo"></textarea><br><br>
+
+          <input type="button" id="sendform" name="sendform" value="Send">
+        </form>
+      </section>
+      
+    </main>
     <footer>
         <p>This website was created for a module assignment on Interactive Development at Ngee Ann Polytechnic</p>
     </footer>
