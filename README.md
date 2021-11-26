@@ -6,30 +6,37 @@ _This project was done as an assignment for the Interactive Development module i
 
 ## Design Process
 
-Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+In this section, I will go over my design process and design elements implemented.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+As mentioned above, this project is to create a website for personal branding purposes. As a employer, I would want to be able to easily view an individual's portfolio such as background, skills, experience and others, so that I can decide whether they should be a candidate for hiring.
 
-- As a user type, I want to perform an action, so that I can achieve a goal.
+With this in mind, I designed a [wireframe](https://xd.adobe.com/view/5c9a7b52-5ff3-4dd2-8a6b-3bba49ac067b-09c9/) for my website to be able to easily view my portfolio as well as some of my personal interests and values in a systematic manner. I included 4 pages of content to my websites, which are the home page, about me page, portfolio page and contact page.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process.
-These files should themselves either be included as a pdf file in the project itself (in an separate directory)
-Include the Adobe XD wireframe as a folder. You can include the XD share url.
+I also tried to recreate some designs and layouts that I previously used in my first personal branding website (link at bottom of page) and improve on it to make my website more interactive.
+
+The colour scheme uses 2 main colors of pink and white. I used mostly 2 colours to create a slight contrast between the two. This would make the words visible enough while also creating a softer and cleaner effect throughout the website. Initially, I was going to choose a shade of blue instead of pink as seen in the wireframe created. However, with a friend's recommendation, I swtiched it to pink.
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+In this section, I will explain the features of my website and list down some additional features that could be implemented to make the website more functional and interactive.
 
 ### Existing Features
 
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
+
+- Navigation bar - allows users to navigate between different pages of the website by clicking on each page's label. The current page is shown through an underline below the label.
+
+- Personal Gallery - allows users to view photos and by hovering over an image, it displays the context of the photo.
+
+- Socials - allows users to go to my social media account(s) by clicking on the image correlated to the platform.
+
+- Contact Form - allows users to easily ask me inquiries by filling up the form and submitted it
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
 
-- Another feature idea
+- Contact Form (functional) - allows users to actually utilise the form to ask me inquiries that I will receive.
 
 ## Technologies Used
 
