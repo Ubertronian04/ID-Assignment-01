@@ -3,7 +3,7 @@ body {
 }
 header {
   background-color: pink;
-  z-index: 999;
+  z-index: 1;
   position: sticky;
   top: -1px;
 }
@@ -186,9 +186,7 @@ h2 {
 .portfolio-content {
   padding: 3rem;
   margin: 0 4% 0 4%;
-  border-style: solid;
-  border-color: pink;
-  border-width: thick;
+  border: pink solid thick;
   width: 400px;
 }
 #portfolio-coloured-section-title {
@@ -271,18 +269,15 @@ h3 {
 input,
 textarea {
   width: 350px;
-  border-style: solid;
-  border-radius: 5px;
-  border-color: gray;
+  border: gray 2px solid;
+  border-radius: 3px;
 }
 textarea {
   height: 200px;
-  border-width: 2px;
 }
 .contactform-section {
   margin-top: 2.5rem;
-  border-color: rgb(236, 153, 167);
-  border-style: solid;
+  border: rgb(236, 153, 167) solid;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 .contactform-section h3,
@@ -297,6 +292,41 @@ textarea {
 #sendform:active {
   background-color: rgb(207, 207, 207);
   transform: scale(0.94);
+}
+/*pop-up window after form is submitted*/
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 0px 0 15px 0;
+  border: 1px solid #888;
+  width: 25%;
+}
+.modal-content h2 {
+  padding: 1rem 0 1rem 0;
+  margin: 20px 0 0 0;
+  border-style: double none double none;
+}
+.closeBtn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.closeBtn:hover,
+.closeBtn:focus {
+  color: black;
+  cursor: pointer;
 }
 /*Adjusting display*/
 /*Home */
