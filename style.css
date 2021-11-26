@@ -3,6 +3,9 @@ body {
 }
 header {
   background-color: pink;
+  z-index: 999;
+  position: sticky;
+  top: -1px;
 }
 /* for navigation */
 .nav_bar ul {
@@ -13,9 +16,9 @@ header {
   list-style-type: none;
 }
 .nav_bar ul a {
-  font-size: larger;
+  font-size: 110%;
   display: block;
-  padding: 0.7rem 1.05rem;
+  padding: 0.2rem 1.05rem 0.7rem;
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -305,6 +308,15 @@ textarea {
 @media (max-width: 455px) {
   .nav_bar ul {
     align-items: space-around;
+  }
+  .nav_bar ul a {
+    font-size: 80%;
+  }
+  h1 {
+    font-size: 130%;
+  }
+  h3.website-title {
+    font-size: 110%;
   }
   .round-image {
     width: 200px;
