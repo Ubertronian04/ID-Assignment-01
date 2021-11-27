@@ -39,7 +39,7 @@
       <section class="contactform-section">
         <h3>Contact Form</h3>
         <p>Send me your queries</p>
-        <form class="contactform">
+        <form id="form" class="contactform" onsubmit="return false">
           <label for="name">Name</label><br>
           <input type="text" placeholder="Enter First and Last name" name="name" required><br><br>
 
@@ -61,14 +61,15 @@
           <button id="sendform" type="submit">Send</button>
         </form>
       </section>
-      <div id="ty-modal" class="modal">
+      
+    </main>
+    <div id="ty-modal" class="modal">
         <section class="modal-content">
           <span id="btn" class="closeBtn"">&times;</span>
           <h2>Thank You<br>for Contacting me!</h2>
           <p>I will get back to your inquiry within<br><u>3-4</u> working days</p>
         </section>
       </div>
-    </main>
     <footer>
         <p>This website was created for a module assignment on Interactive Development at Ngee Ann Polytechnic</p>
     </footer>

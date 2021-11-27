@@ -295,7 +295,7 @@ textarea {
 }
 /*pop-up window after form is submitted*/
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 2;
   left: 0;
@@ -307,8 +307,9 @@ textarea {
 }
 .modal-content {
   background-color: white;
+  text-align: center;
   margin: 15% auto;
-  padding: 0px 0 15px 0;
+  padding: 0 0 15px 0;
   border: 1px solid #888;
   width: 25%;
 }
@@ -402,6 +403,17 @@ textarea {
   #tech-skill-content {
     height: 140%;
   }
+  /*contact form modal popup*/
+  .modal-content {
+    margin-top: 35%;
+    width: 40%;
+  }
+  .modal-content h2 {
+    font-size: 90%;
+  }
+  .modal-content p {
+    font-size: 75%;
+  }
 }
 @media (max-width: 600px) {
   #aboutme-title {
@@ -421,11 +433,24 @@ textarea {
     margin-right: 28%;
   }
   .skill-section {
-    margin-bottom: 20%;
+    margin-bottom: 40%;
+  }
+  .modal-content {
+    margin-top: 50%;
+  }
+  .modal-content h2 {
+    font-size: 90%;
+  }
+  .modal-content p {
+    font-size: 65%;
   }
 }
 @media (max-width: 472px) {
   .contactpg {
     transform: scale(0.86);
+  }
+  input,
+  textarea {
+    width: 285px;
   }
 }

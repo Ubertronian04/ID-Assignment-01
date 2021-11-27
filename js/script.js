@@ -1,15 +1,18 @@
-const modal = document.querySelectorAll("ty-modal");
-const formBtn = document.querySelectorAll("sendform");
-const span = document.querySelector(".closeBtn");
+const modal = document.querySelector("#ty-modal");
+const formBtn = document.querySelector("#sendform");
+const span = document.querySelector("#btn");
 
-console.log(modal, formBtn, span);
+let modalDisplay = modal.style.display;
 
-formBtn.onclick = function() {
-    modal.style.display = "block";
+formBtn.submit = function () {
+    e = function() {modal.style.display = "block";}
+    document.addEventListener("submit", e);
 }
-span.onclick = function() {
-    modal.style.display = "none";
+span.onclick = function () {
+    modalDisplay = "none";
+    location.reload();
 }
-window.onclick = function() {
-    modal.style.display = "none";
-}
+
+formBtn.submit();
+
+
