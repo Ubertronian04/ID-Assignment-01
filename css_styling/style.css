@@ -202,7 +202,7 @@ h2 {
 }
 #portfolio-coloured-section-content p {
   background-color: white;
-  border-color: white;
+  border-color: pink;
 }
 /*skills*/
 #core-skill-title {
@@ -231,8 +231,8 @@ h2 {
 .skill-section {
   display: grid;
   margin: 2% 9% 0 9%;
-  grid-template-columns: 1f 1f;
-  grid-template-rows: 1f 75%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1 75%;
   grid-template-areas:
     "title1 title2"
     "content1 content2";
@@ -337,9 +337,6 @@ textarea {
   }
 }
 @media (max-width: 455px) {
-  .nav_bar ul {
-    align-items: space-around;
-  }
   .nav_bar ul a {
     font-size: 80%;
   }
@@ -369,6 +366,7 @@ textarea {
   .skill-section {
     margin-left: 22%;
     margin-right: 22%;
+    grid-template-rows: 1 75%;
   }
 }
 @media (max-width: 975px) {
@@ -392,8 +390,6 @@ textarea {
   }
   .skill-section {
     margin: 2% 0 12% 0;
-    grid-template-columns: 1;
-    grid-template-rows: 1f 1f 1f 1f;
     grid:
       "title1"
       "content1"

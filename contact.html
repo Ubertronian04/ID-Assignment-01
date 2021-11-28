@@ -20,7 +20,7 @@
       <nav class="nav_bar">
         <ul>
           <li><a id="home" href="index.html">Home</a></li>
-          <li><a id="about" href="aboutme.html"">About me</a></li>
+          <li><a id="about" href="aboutme.html">About me</a></li>
           <li><a id="portfolio" href="portfolio.html">Portfolio</a></li>
           <li class="currentpg"><a id="contact" href="contact.html">Contact</a></li>
         </ul>
@@ -41,22 +41,22 @@
         <p>Send me your queries</p>
         <form id="form" class="contactform" onsubmit="return false">
           <label for="name">Name</label><br>
-          <input type="text" placeholder="Enter First and Last name" name="name" required><br><br>
+          <input type="text" placeholder="Enter First and Last name" id="name" name="name" required><br><br>
 
           <label for="email">Email</label><br>
-          <input type="email" placeholder="Enter Company/Business email" name="email" required><br><br>
+          <input type="email" placeholder="Enter Company/Business email" id="email" name="email" required><br><br>
 
           <label for="telNo">Phone No.</label><br>
-          <input type="tel" placeholder="Enter Contact No." name="telNo" pattern="11|[0-9]{11}" required><br><br>
+          <input type="tel" placeholder="Enter Contact No." id="telNo" name="telNo" pattern="11|[0-9]{11}" required><br><br>
 
           <label for="company">Company</label><br>
-          <input type="text" placeholder="Enter Company Name" name="company"><br><br>
+          <input type="text" placeholder="Enter Company Name" id="company" name="company"><br><br>
 
           <label for="reason">Reason for reaching out</label><br>
-          <input type="text" name="reason" required><br><br>
+          <input type="text" id="reason" name="reason" required><br><br>
 
           <label for="addInfo">Additional Information</label><br>
-          <textarea name="addInfo"></textarea><br><br>
+          <textarea id="addInfo" name="addInfo"></textarea><br><br>
 
           <button id="sendform" type="submit">Send</button>
         </form>
@@ -65,7 +65,7 @@
     </main>
     <div id="ty-modal" class="modal">
         <section class="modal-content">
-          <span id="btn" class="closeBtn"">&times;</span>
+          <span id="btn" class="closeBtn">&times;</span>
           <h2>Thank You<br>for Contacting me!</h2>
           <p>I will get back to your inquiry within<br><u>3-4</u> working days</p>
         </section>
