@@ -2,6 +2,8 @@
 
 This project is about creating a personal portfolio website from scratch. The website's purpose is to serve as a platform to promote myself and the technical skills I used in the process. The contents of the website will cover facts and information about me so that any potential employer that comes across it will understand me better.
 
+Click [here](https://ubertronian04.github.io/ID-Assignment-01/) to go to my personal portfolio site, or click the link in the "About" section of this respository.
+
 _This project was done as an assignment for the Interactive Development module in Ngee Ann Polytechnic._
 
 ## Design Process
