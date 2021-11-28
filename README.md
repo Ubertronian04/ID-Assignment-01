@@ -22,8 +22,6 @@ In this section, I will explain the features of my website and list down some ad
 
 ### Existing Features
 
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-
 - Navigation bar - allows users to navigate between different pages of the website by clicking on each page's label. The current page is shown through an underline below the label.
 
 - Personal Gallery - allows users to view photos and by hovering over an image, it displays the context of the photo.
@@ -32,11 +30,11 @@ In this section, I will explain the features of my website and list down some ad
 
 - Contact Form - allows users to easily ask me inquiries by filling up the form and submitted it
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
 ### Features Left to Implement
 
-- Contact Form (functional) - allows users to actually utilise the form to ask me inquiries that I will receive.
+- Contact Form (functional) - allows users to actually utilise the form to ask me inquiries that I will receive. Currently, the form does not have anywhere to submit its information to.
+
+- Slideshow Gallery - allows users to use buttons on the side of the "Personal Gallery" section to view more pictures. An additional feature to this would be to show a larger display of the current photo selected.
 
 ## Technologies Used
 
@@ -51,21 +49,39 @@ These languages are the technologies used in the creation of this project.
 
 ## Testing
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+This section covers the testing of features and their intended output when a user's action is taken.
 
-1. Contact form:
-   1. Go to the "Contact Us" page
+1. Navigation Bar:
+   Using the navigation buttons at the top left of the screen...
+
+   1. Go to "Home" page
+   2. Go to "About me" page and ensure the correct page is loaded
+   3. Go back to "Home" page
+   4. Repeat step 2-3 starting from all the different pages and testing each navigation button on each page to check if the right page is loaded
+
+2. Personal Gallery:
+
+   1. Hover over each photo and verify that a description of the photo appears on the center of it.
+
+3. Socials:
+
+   1. Click on the logo of social media platform (i.e. LinkedIn) and verify that it goes to my profile page (Chiam Wei)
+
+4. Contact form:
+
+   1. Go to the "Contact" page
    2. Try to submit the empty form and verify that an error message about the required fields appears
-   3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-   4. Try to submit the form with all inputs valid and verify that a success message appears.
+   3. Try to submit the form with an invalid email address and verify that an error message appears
+   4. Try to submit the form with alphabets in the Phone No. section and verify an error message appears
+   5. Try to submit the form with all inputs valid and verify that a modal popup appears
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+### Display
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+This website works and displays correctly on most devices. The exception is devices with screen sizes less thant 320px (if any). In smaller devices (below 1000px), all content within the website will be convert to a column layout if it is not already done so.
 
-**This website works and displays correctly on most devices. The exception is devices with screen sizes less thant 320px (if any). In smaller devices (below 1000px), all content within the website will be convert to a column layout if it is not already done so.**
+### Bugs & Issues
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+As mentioned in the "Features Left to Implement" section, the contact form is unable to submit and does not return any values. This is due to the fact that there is no external file to save the information stored in the form (i.e. a php file).
 
 ## Credits
 
